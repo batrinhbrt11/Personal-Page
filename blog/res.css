@@ -1,0 +1,240 @@
+@media screen and (min-width:968px) 
+{
+    :root{
+        --big-size:32px;
+        --h1-size:24px;
+        --h2-size:20px;
+        --h3-size:18px;
+        --normal-size:15px;
+        --small-size:12px;
+        --smaller-size:10px;
+    }
+    
+}
+@media screen and (max-width:767px){
+    .nav_menu{
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        padding: 32px 24px 64px;
+        box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+        border-radius:24px 24px 0 0 ;
+        transition: .3s;
+    }
+    
+    
+
+} 
+.show-menu{
+    bottom: 0;
+}
+.active-link{
+    color: var(--first-color);
+}
+.scroll-header{
+    box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+}
+@media screen and (max-width:350px) {
+    .container{
+        margin-left:var(--mb-4);
+        margin-right: var(--mb-4);
+    }
+
+   
+    .nav_list{
+        column-gap:0;
+    }
+    .home_content{
+        grid-template-columns: .25fr 3fr;
+    }
+    .home_blob{
+        width: 100%;
+    }
+    .skill_title{
+        font-size: var(--normal-size);
+    }
+    .qualification_data{
+        gap:4px;
+    }
+    .service_container{
+        grid-template-columns: max-content;
+        justify-content: center;
+    }
+    .ser_content{
+        padding-right: 55px;
+    }
+    .ser_modal{
+        padding: 0 8px;
+        
+    }
+    
+}
+@media screen and (min-width:550px){
+    .home_content{
+        grid-template-columns: max-content 1fr 1fr;
+    }
+    .home_data{
+        grid-column: initial;
+    }
+    .home_img{
+        order:1;
+        justify-self: center;
+    }
+    .home_social{
+        margin-right: 20px;
+    }
+    .about_container,
+    .skills_container,
+    .portfolio_content,
+    .footer_container,.contact_container{
+        grid-template-columns: repeat(2,1fr) ;
+    }
+    
+}
+@media screen and (min-width:768px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    body{
+        margin: 0;
+    }
+    .section{
+        padding: 96px 0 32px;
+    }
+    .section_sub-title{
+        margin-bottom: 64px;
+    }
+    .header{
+        top:0;
+        bottom: initial;
+    }
+    .header,
+    .main,
+    .footer_container{
+        padding: 0 16px;
+    }
+    .nav{
+        height: calc(var(--header-height) + 25px);
+        column-gap: 16px;
+    }
+    .nav_icon::before,
+    .nav_close::before,
+    .nav_toggle{
+        display: none;
+    }
+    .nav_list{
+        display: flex;
+        column-gap: 30px;
+    }
+    .nav_menu{
+        margin-left: auto;
+    }
+    .change-theme{
+        margin: 0;
+    }
+    .home_container{
+        row-gap: 80px;
+    }
+    .home_content{
+        padding-top: 88px;
+        column-gap: 32px;
+    }
+    .home_blob{
+        width: 100%;
+    }
+    .home_scroll{
+        display: block;
+    }
+    .home_scroll-btn{
+        margin-left:48px;
+    }
+    .about_container{
+        column-gap: 80px;
+    }
+    .about_img{
+        width: 350px;
+    }
+    .about_description{
+        text-align: initial;
+    }
+    .about_info{
+        justify-content: space-between;
+    }
+    .about_buttons{
+        justify-content: initial;
+    }
+    .service_container{
+        grid-template-columns: repeat(3,218px);
+        justify-content: center;
+    }
+    .ser_icon{
+        font-size: 32px;
+
+    }
+    .ser_content{
+        padding: 96px 0 32px 40px;
+    }
+    .ser_modal_content{
+        width: 450px;
+    }
+    .portfolio_img{
+        width: 320px;
+        
+    }
+    .portfolio_content{
+        align-items: center;
+    }
+    .footer_container{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .footer_bg{
+        padding: 48px 0 56px;
+    }
+    .footer_links{
+        flex-direction: row;
+        column-gap: 32px;
+      
+    }
+    .footer_socials{
+        justify-self: flex-end;
+        
+    }
+    .footer_copy{
+        margin-top: 50px;
+    }
+}
+@media screen and (min-width:1024px){
+    .header,.main,.footer_container{
+        padding: 0;
+    }
+    .home_blob{
+        width: 320px;
+    }
+    .home_social{
+        transform: translateX(-6rem);
+    }
+    .service_container{
+        grid-template-columns: repeat(3,300px);
+    }
+    .portfolio_content{
+        column-gap: 80px;
+        width: 800px;
+    }
+ 
+    .swiper_portfolio{
+        font-size: 50px;
+
+    }
+    
+    .swiper-button-prev::before{
+        left: -50px;
+    }
+    .swiper-button-next::before{
+        right: -50px;
+    }
+    
+}
